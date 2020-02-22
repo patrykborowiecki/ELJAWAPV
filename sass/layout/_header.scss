@@ -1,0 +1,145 @@
+//NAVIGATION
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__row {
+    display: flex;
+    height: 6rem;
+    align-items: center;
+  
+    &--1 {
+      height: 3rem;
+    }
+  
+    &--tel,
+    &--mail {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  
+    &--2 {
+      height: 6rem;
+      -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+	    -moz-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+      
+      &-link {
+        text-decoration: none;
+        color: $color-black;
+      }
+    
+      &-link:hover {
+        color: $color-primary;
+      }
+    }
+
+  
+  
+  }
+
+
+  &__item {
+    list-style: none;
+    color: $color-white;
+    font-size: 1.5rem;
+    padding-right: 5rem;
+    font-weight: 700;
+    ;
+   
+    &--2  {
+      list-style: none;
+      color: $color-black;
+      font-size: 1.5rem;
+      padding-right: 6rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__row:nth-child(1) {
+    background: $color-primary;
+    justify-content: flex-start;
+    padding-right: 1rem;
+    
+  }
+
+  &__logo {
+    height: 12rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    align-self: flex-end;
+    padding-top: 2rem;
+    position: absolute;
+    left: 1rem;
+    top: -1rem;
+  }
+
+  &__row:nth-child(2) {
+    background: $color-white;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    
+  }
+
+
+}
+ 
+// HEADER 
+
+.header {
+  height: 85vh;
+  background-image: url(../../img/headerpic.jpg);
+  background-size: cover;
+  background-position: top;
+
+  &__heading {
+    color: $color-black;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 7rem;
+  
+    &--primary {
+      display: block;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 3rem;
+      padding-bottom: 5rem;
+      animation: moveInRight 1s ease-out;
+    } 
+  
+    &--secondary {
+      display: block;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 1.5rem;
+      animation: moveInLeft 1s ease-out;   
+    }
+  
+  }
+
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+

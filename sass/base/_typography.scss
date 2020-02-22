@@ -1,0 +1,52 @@
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #06724e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  text-align: center;
+
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10rem;
+  }
+
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  text-align: center;
+  
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+
+
+}
+
+
+.photo {
+  &__house {
+    height: 44rem;
+    width: 55rem;
+  
+    &--1 {
+      height: 44rem ; 
+      width: 55rem;
+    }
+  }
+}
+
