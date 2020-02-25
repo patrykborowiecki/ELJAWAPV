@@ -10,6 +10,8 @@
 .section-form {
   padding: 15rem 0;
   background-color: $color-grey-light;
+
+
 }
 
 .email {
@@ -23,6 +25,10 @@
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
   height: 70rem;
   width: 100%;
+
+  @include respond(phone) {
+    display: none;
+  }
   
   
   &__form {

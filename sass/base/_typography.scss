@@ -8,6 +8,10 @@
   color: transparent; 
   text-align: center;
 
+  @include respond(phone) {
+    font-size: 4rem;
+  }
+
 }
 
 .heading-tertiary {
@@ -16,13 +20,32 @@
   text-transform: uppercase;
   text-align: center;
 
+  @include respond(tab-land) {
+    font-size: 1.5rem;
+    padding-right: 2rem;
+  }
+
+  @include respond(phone) {
+    padding-bottom: 2rem;
+  }
+  
   &--1 {
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     padding-top: 10rem;
+    
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+      padding-right: 2rem;
+    }
+  
+    @include respond(phone) {
+      padding-top: 0rem;
+    }
   }
+
 
 }
 
@@ -35,6 +58,12 @@
   }
 
 
+  @include respond(tab-land) {
+    font-size: 1.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
 }
 
 
@@ -42,10 +71,30 @@
   &__house {
     height: 44rem;
     width: 55rem;
+
+    @include respond(tab-land) {
+      height: 40rem;
+      width: 45rem; 
+      padding-right: 2rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
   
     &--1 {
       height: 44rem ; 
       width: 55rem;
+    
+      @include respond(tab-land) {
+        height: 40rem;
+        width: 45rem; 
+        padding-left: 2rem;
+      }
+    
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 }

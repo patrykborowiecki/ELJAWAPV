@@ -21,6 +21,9 @@
     float: left;
     background-color: $color-grey-light;
     
+    @include respond(phone) {
+      width: 100%;
+    }
     
     &:not(:last-child) {
       margin-right: $gutter-horizontal;

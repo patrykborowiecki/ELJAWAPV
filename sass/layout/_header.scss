@@ -9,6 +9,7 @@
     display: flex;
     height: 6rem;
     align-items: center;
+    
   
     &--1 {
       height: 3rem;
@@ -18,6 +19,11 @@
     &--mail {
       margin-left: 2rem;
       margin-right: 2rem;
+
+      @include respond(phone) {
+        display: none;
+        margin-left: 2rem;
+      }
     }
   
     &--2 {
@@ -47,7 +53,10 @@
     font-size: 1.5rem;
     padding-right: 5rem;
     font-weight: 700;
-    ;
+    
+    @include respond(phone) {
+      margin-left: 4rem;
+    }
    
     &--2  {
       list-style: none;
@@ -57,6 +66,17 @@
       font-weight: 700;
       text-decoration: none;
       text-transform: uppercase;
+      
+      @include respond(tab-port) {
+        padding-right: 3rem;
+      }
+
+      @include respond(phone) {
+        padding-right: 1rem;
+        font-size: 1rem;
+        font-weight: 900;
+      }
+    
     }
   
   }
@@ -81,6 +101,12 @@
     position: absolute;
     left: 1rem;
     top: -1rem;
+
+    @include respond(phone) {
+      height: 9rem;
+      left: .2rem;
+      top: .5rem;
+    }
   }
 
   &__row:nth-child(2) {
@@ -114,7 +140,18 @@
       letter-spacing: 3rem;
       padding-bottom: 5rem;
       animation: moveInRight 1s ease-out;
+    
+      @include respond(tab-land) {
+        letter-spacing: 1rem;
+        font-size: 5rem; 
+      }
+    
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     } 
+
+
   
     &--secondary {
       display: block;
@@ -122,6 +159,11 @@
       font-weight: 700;
       letter-spacing: 1.5rem;
       animation: moveInLeft 1s ease-out;   
+    
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    
     }
   
   }
@@ -138,7 +180,18 @@
 
 
 
+// TOGGLE MENU
 
+.menu-toggle {
+  position: absolute;
+  color: $color-black;
+  line-height: 5rem;
+  font-size: 2.4rem;
+  right: 3rem;
+  top: 3.5rem;
+  display: none;
+  cursor: pointer;
+}
 
 
 
