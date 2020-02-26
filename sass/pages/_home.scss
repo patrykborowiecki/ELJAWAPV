@@ -11,7 +11,9 @@
   padding: 15rem 0;
   background-color: $color-grey-light;
 
-
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .email {

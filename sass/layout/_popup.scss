@@ -75,10 +75,16 @@
     font-size: 2rem;
     margin-bottom: 4rem;
   
+    @include respond(phone) {
+      font-size: 1rem;
+    }
+
+
     &--1 {
       font-size: 2rem;
       margin-bottom: 4rem;
       text-align: center;
+    
     }
     
     &--2 {

@@ -4,7 +4,8 @@
   "description": "Landing page for ELJAWA",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w",
+    "build:netlify": "node-sass -o css/styles.css sass/main.scss"
   },
   "author": "Patryk Borowiecki",
   "license": "ISC",

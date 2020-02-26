@@ -9,7 +9,7 @@
   text-align: center;
 
   @include respond(phone) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
 }
@@ -27,6 +27,7 @@
 
   @include respond(phone) {
     padding-bottom: 2rem;
+    
   }
   
   &--1 {
