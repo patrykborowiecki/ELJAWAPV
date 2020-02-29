@@ -142,6 +142,11 @@
       padding-bottom: 5rem;
       animation: moveInRight 1s ease-out;
     
+      @include respond(laptop) {
+        font-size: 5rem;
+        padding-top: 10rem;
+      }
+      
       @include respond(tab-land) {
         letter-spacing: 1rem;
         font-size: 5rem; 

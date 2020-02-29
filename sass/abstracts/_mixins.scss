@@ -52,9 +52,15 @@ breakpoints choices:
     @media (max-width: 75em) { @content };
   }
 
+  @if $breakpoint == "laptop" {
+    @media (max-width: 87.5em) { @content };
+  }
+ 
   @if $breakpoint == "big-desktop" {
     @media (min-width: 112.5em) { @content };
   }
+
+
 
 }
 

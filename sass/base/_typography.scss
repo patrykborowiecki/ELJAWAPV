@@ -20,6 +20,10 @@
   text-transform: uppercase;
   text-align: center;
 
+  @include respond(laptop) {
+    font-size: 1.6rem;
+  }
+ 
   @include respond(tab-land) {
     font-size: 1.5rem;
     padding-right: 2rem;

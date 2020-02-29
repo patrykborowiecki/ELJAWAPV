@@ -92,6 +92,10 @@
       margin-bottom: 4rem;
       text-align: center;
 
+      @include respond(laptop) {
+        font-size: 1.3rem;
+      } 
+
       @include respond(tab-land) {
         display: none;
       }
